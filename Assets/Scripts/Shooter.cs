@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    [SerializeField] GameObject weapon, gun;
+
+    public void Fire() {
+        Instantiate(weapon, gun.transform.position, transform.rotation);
     }
 }
