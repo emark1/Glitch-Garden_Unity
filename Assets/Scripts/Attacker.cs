@@ -9,6 +9,7 @@ public class Attacker : MonoBehaviour
     float currentSpeed = 0f;
 
     [SerializeField] float health = 100f;
+    [SerializeField] GameObject deathVFX;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,8 @@ public class Attacker : MonoBehaviour
     }
 
     private void KillAttacker () {
+        GameObject deathSplatter = Instantiate(deathVFX, transform.position, transform.rotation) as GameObject;
+        Destroy(deathSplatter, 1f);
         Destroy(gameObject);
     }
 }
