@@ -7,6 +7,9 @@ public class Attacker : MonoBehaviour
 
     // [Range (0f, 5f)][SerializeField] float walkSpeed = 1f;
     float currentSpeed = 0f;
+
+    [SerializeField] float health = 100f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +27,23 @@ public class Attacker : MonoBehaviour
 
     public void SetMovementSpeed(float speed) {
         currentSpeed = speed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if (!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer) {
+        health -= damageDealer.GetDamage();
+        damageDealer.DestroyProjectile();
+        if (health <= 0) {
+            KillAttacker();
+        }
+    }
+
+    private void KillAttacker () {
+        Destroy(gameObject);
     }
 }
