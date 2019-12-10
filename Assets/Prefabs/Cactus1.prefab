@@ -39,9 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159146571294840978}
-  - component: {fileID: 159146571955991866}
   - component: {fileID: 159146571955991867}
-  - component: {fileID: 159146571955991868}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -64,25 +62,6 @@ Transform:
   m_Father: {fileID: 3409617126617284263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &159146571955991866
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159146571955991869}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c7e44aa5fe612444b9e01f5b690c63f5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &159146571955991867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -133,20 +112,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &159146571955991868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159146571955991869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1647294bb7bcd014086e81885448212b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 5686963883888813412, guid: d9509738333d0a44bbf360ed50aa055d, type: 3}
-  gun: {fileID: 159146571025841553}
 --- !u!1 &5919222957669537652
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3409617126617284263}
   - component: {fileID: 2314466224731504993}
+  - component: {fileID: 7300385966355830133}
+  - component: {fileID: 1324294149}
   m_Layer: 0
   m_Name: Cactus1
   m_TagString: Untagged
@@ -192,3 +159,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!114 &7300385966355830133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919222957669537652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1647294bb7bcd014086e81885448212b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 5686963883888813412, guid: d9509738333d0a44bbf360ed50aa055d, type: 3}
+  gun: {fileID: 159146571025841553}
+--- !u!95 &1324294149
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919222957669537652}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7e44aa5fe612444b9e01f5b690c63f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

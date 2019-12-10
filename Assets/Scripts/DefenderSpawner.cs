@@ -21,7 +21,10 @@ public class DefenderSpawner : MonoBehaviour
     }
 
     private void SpawnDefender (Vector2 position) {
+        var iDunno = FindObjectOfType<StarDisplay>().SpendStars(defender.starCost);
+        if (iDunno) {
         Defender newDefender = Instantiate(defender, position, transform.rotation) as Defender;
+        }
     }
 
     private Vector2 SnapToGrid(Vector2 rawWorldPos) {
