@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467153926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65412664, y: 0.23145175, z: -3.602539}
+  m_LocalPosition: {x: -0.65412664, y: 0.48, z: -3.602539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7755835416175966520}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7755835416175966522}
   - component: {fileID: 7755835416175966521}
   - component: {fileID: 72060961}
-  - component: {fileID: 72060960}
+  - component: {fileID: 852009073}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -171,7 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &72060960
+--- !u!60 &852009073
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,31 +187,19 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.51, y: 1.86}
-    newSize: {x: 0.83, y: 0.88}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.114999995, y: -0.48999998}
-      - {x: -0.24499999, y: -0.5}
-      - {x: -0.345, y: -0.24}
-      - {x: -0.475, y: 0.14999999}
-      - {x: -0.515, y: 0.17}
-      - {x: -0.755, y: 0.17}
-      - {x: -0.85499996, y: 0.03}
-      - {x: -0.92499995, y: -0.11}
-      - {x: -0.92499995, y: -0.21}
-      - {x: -0.73499995, y: -0.34}
-      - {x: -0.805, y: -0.48999998}
-      - {x: -0.885, y: -0.61}
-      - {x: -0.765, y: -0.65}
-      - {x: -0.505, y: -0.63}
-      - {x: -0.39499998, y: -0.72999996}
-      - {x: -0.315, y: -0.72999996}
-      - {x: -0.145, y: -0.63}
-      - {x: -0.074999996, y: -0.57}
-      - {x: -0.074999996, y: -0.52}
+    - - {x: -1.2484021, y: 0.6973567}
+      - {x: -1.6130881, y: 0.3846774}
+      - {x: -1.5461717, y: -0.123874664}
+      - {x: -1.1983638, y: -0.18564415}
+      - {x: -0.9480028, y: -0.19816256}
+      - {x: -0.84254265, y: -0.015130997}
+      - {x: -0.9782939, y: 0.3657632}
