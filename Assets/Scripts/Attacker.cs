@@ -10,16 +10,19 @@ public class Attacker : MonoBehaviour
 
     [SerializeField] float health = 100f;
     [SerializeField] GameObject deathVFX;
+    GameObject currentTarget;
+    Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        animator = GetComponent<Animator>();
     }
 
-    void Update()
-    {
+    void Update() {
         Move();
+    }
+    public void Attack(GameObject target) {
+        animator.SetBool("IsAttacking", true);
+        currentTarget = target;
     }
 
     private void Move () {
@@ -48,5 +51,16 @@ public class Attacker : MonoBehaviour
         GameObject deathSplatter = Instantiate(deathVFX, transform.position, transform.rotation) as GameObject;
         Destroy(deathSplatter, 1f);
         Destroy(gameObject);
+    }
+
+    public void StrikeTarget (float damage) {
+        if (!currentTarget) {
+            return;
+        }
+
+        Health health = currentTarget.GetComponent<Health>();
+        if (health) {
+            health.DealDamage(damage);
+        }
     }
 }
