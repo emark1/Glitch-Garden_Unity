@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     
     [SerializeField] float health = 100f;
+    [SerializeField] GameObject deathVFX;
 
     public void DealDamage(float damage) {
         health -= damage;
@@ -16,19 +17,9 @@ public class Health : MonoBehaviour
     }
 
     private void TriggerDeathVFX() {
-        if(!TriggerDeathVFX) {return;}
-        GameObject deathVFXObject = Instantiate(deathVFXObject, transform.position, transform.rotation);
+        if(!deathVFX) {return;}
+        GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(deathVFXObject, 1f);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

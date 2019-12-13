@@ -46,5 +46,4 @@ MonoBehaviour:
   spawnCounter: 0
   minSpawnDelay: 1
   maxSpawnDelay: 5
-  attackerType: {fileID: 7755835416175966521, guid: 50690b22d24348745a4a8c7429bcc18c,
-    type: 3}
+  attackerType: {fileID: 126460470, guid: 50690b22d24348745a4a8c7429bcc18c, type: 3}

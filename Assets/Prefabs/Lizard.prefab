@@ -91,10 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7755835416175966520}
   - component: {fileID: 7755835416175966522}
-  - component: {fileID: 7755835416175966521}
   - component: {fileID: 72060961}
   - component: {fileID: 852009073}
-  - component: {fileID: 1231263188355122117}
+  - component: {fileID: 126460467}
+  - component: {fileID: 126460470}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -136,21 +136,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7755835416175966521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7755835416175966517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f43d883a587a6d04bb65b1699ad79209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  deathVFX: {fileID: 1695446852270115391, guid: ee30ac2aa0ec2df4f9a55a362c35e9a5,
-    type: 3}
 --- !u!50 &72060961
 Rigidbody2D:
   serializedVersion: 4
@@ -204,7 +189,7 @@ PolygonCollider2D:
       - {x: -0.9480028, y: -0.19816256}
       - {x: -0.84254265, y: -0.015130997}
       - {x: -0.9782939, y: 0.3657632}
---- !u!114 &1231263188355122117
+--- !u!114 &126460467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,3 +201,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef12a83439762249a0b30121f6afba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &126460470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755835416175966517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43d883a587a6d04bb65b1699ad79209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 1695446852270115391, guid: ee30ac2aa0ec2df4f9a55a362c35e9a5,
+    type: 3}

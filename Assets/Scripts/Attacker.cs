@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-
-    // [Range (0f, 5f)][SerializeField] float walkSpeed = 1f;
     float currentSpeed = 0f;
-
     [SerializeField] float health = 100f;
     [SerializeField] GameObject deathVFX;
     GameObject currentTarget;
@@ -19,7 +16,15 @@ public class Attacker : MonoBehaviour
 
     void Update() {
         Move();
+        UpdateAnimationState();
     }
+
+    private void UpdateAnimationState () {
+        if (!currentTarget) {
+            animator.SetBool("IsAttacking", false);
+        }
+    }
+
     public void Attack(GameObject target) {
         animator.SetBool("IsAttacking", true);
         currentTarget = target;
@@ -58,9 +63,9 @@ public class Attacker : MonoBehaviour
             return;
         }
 
-        Health health = currentTarget.GetComponent<Health>();
-        if (health) {
-            health.DealDamage(damage);
+        Health defenderHealth = currentTarget.GetComponent<Health>();
+        if (defenderHealth) {
+            defenderHealth.DealDamage(damage);
         }
     }
 }
