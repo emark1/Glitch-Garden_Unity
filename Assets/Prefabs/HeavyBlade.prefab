@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7149964741462783096}
   - component: {fileID: 1316364130986763696}
   - component: {fileID: 5450657142028592626}
+  - component: {fileID: 1282504714}
   m_Layer: 0
   m_Name: HeavyBlade
   m_TagString: Untagged
@@ -187,6 +188,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9204798, y: 0.9890337}
   m_EdgeRadius: 0
+--- !u!114 &1282504714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163829724376983762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ca4cd281cb05844b3df9078e9c492e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 1695446852270115391, guid: ee30ac2aa0ec2df4f9a55a362c35e9a5,
+    type: 3}
 --- !u!1 &6163829724544191212
 GameObject:
   m_ObjectHideFlags: 0
