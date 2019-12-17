@@ -1495,5 +1495,10 @@ PrefabInstance:
       propertyPath: winLabel
       value: 
       objectReference: {fileID: 1818837351}
+    - target: {fileID: 561885815512860003, guid: 86ded2ef8ff3c8b40bbc358c29625000,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86ded2ef8ff3c8b40bbc358c29625000, type: 3}
