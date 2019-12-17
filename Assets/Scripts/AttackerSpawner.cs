@@ -24,6 +24,10 @@ public class AttackerSpawner : MonoBehaviour
         SpawnAttacker();
     }
 
+    public void StopSpawning() {
+        spawn = false;
+    }
+
     private void SpawnAttacker() {
         var randomNum = Random.Range(0, attackerList.Count);
         Spawn(randomNum);
