@@ -27,4 +27,8 @@ public class LevelLoader : MonoBehaviour
             StartRoutine();
         }
     }
+
+    public void Lose () {
+        SceneManager.LoadScene("GameOver");
+    }
 }

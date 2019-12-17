@@ -17,11 +17,13 @@ public class PlayerHealth : MonoBehaviour
         healthText.text = playerHealth.ToString();
     }
 
-    public void LoseHealth (int amount) {
-        playerHealth -= amount;
+    public void LoseHealth () {
+        playerHealth -= 10;
 
-        // if health <= 0, load game over
-        
+        if (playerHealth <= 0) {
+            FindObjectOfType<LevelLoader>().Lose();
+        }
+
         UpdateDisplay();
     }
 }
