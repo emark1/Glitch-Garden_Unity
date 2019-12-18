@@ -10,7 +10,6 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] float maxSpawnDelay = 5f;
     [SerializeField] List<Attacker> attackerList;
 
-    // Start is called before the first frame update
     IEnumerator Start()
     {
         do {

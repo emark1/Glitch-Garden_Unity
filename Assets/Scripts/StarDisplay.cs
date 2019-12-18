@@ -7,7 +7,7 @@ public class StarDisplay : MonoBehaviour
 {
     [SerializeField] int stars = 100;
     Text starText;
-    // Start is called before the first frame update
+
     void Start()
     {
         starText = GetComponent<Text>();
