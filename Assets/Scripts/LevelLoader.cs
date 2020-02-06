@@ -21,6 +21,14 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene + 1);
     }
 
+    public void LoadOptions () {
+        SceneManager.LoadScene("OptionsScreen");
+    }
+
+    public void LoadMainMenu() {
+        SceneManager.LoadScene("StartScreen");
+    }
+
     void Start () {
         currentScene = SceneManager.GetActiveScene().buildIndex;
         if (currentScene == 0) {
